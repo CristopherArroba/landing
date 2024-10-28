@@ -6,6 +6,7 @@ let sendData = ( ) => {
     // Obtén los datos del formulario
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries()); // Convierte FormData a objeto
+    
     // new Date().toLocaleString( locales, options )
     data['saved'] = new Date().toLocaleString('es-CO', { timeZone: 'America/Guayaquil' })
 
